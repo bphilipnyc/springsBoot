@@ -20,7 +20,9 @@ public class URLController {
     @PostMapping("/result")
     public String result(@ModelAttribute Employee employee) {
 
-        System.out.print(employee.getName());
+        System.out.println("******");
+        System.out.println(employee.getName());
+        System.out.println("******");
         return "result";
     }
 }
